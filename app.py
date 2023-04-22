@@ -42,8 +42,8 @@ def hotel():
                     idx = list(food.hotelngo.find({"hid":i['_id']}))
                     if len(idx)>=1:
                         requested_food = list(food.food_data.find({"_id":idx[0]['fid']}))
-                         
-                         
+                        req = requested_food[0]
+                        food.food_data.delete_one(req) 
                         print(idx)
                         print(requested_food)
                         if requested_food:    
@@ -75,13 +75,6 @@ def requested():
 @app.route('/register',methods=['post'])
 def register():
     return render_template("register.html")
-
-# @app.route('/update-counter', methods=['POST'])
-# def update_counter():
-#     button_counter = request.form['buttonCounter']
-#     print(button_counter)
-#     # Do something with the button_counter value
-#     return 'Button counter received successfully!'
 
 
 @app.route('/addUser',methods=['post'])
