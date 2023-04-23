@@ -2,7 +2,7 @@
 <html>
   <head>
     <meta charset="UTF-8">
-    <title>NGO Homepage</title>
+    <title>Connect - Bridging the Gap</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
@@ -10,18 +10,14 @@
   </head>
   <body>
   
-<nav class="navbar navbar-default">
-  <div class="container-fluid">
-    <div class="navbar-header">
-      <a class="navbar-brand" href="#">FoodWastage</a>
-    </div>
-    <ul class="nav navbar-nav">
-      <li class="active"><a href="#">Home</a></li>
-      <li><a href="#">Analytics</a></li>
-      <li><a href="#">History</a></li>
-    </ul>
-  </div>
-</nav>
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+          <div class="navbar-header">
+            <img class="card-img-top" src="./static/img/connect.png" alt="Card image" style="width:45%">
+          </div>
+          
+        </div>
+      </nav>
     
     
 
@@ -31,6 +27,7 @@
     {% set ns = namespace(buttonCounter=0) %} 
   <h1> NGO Management Dashboard </h1>
   <form action="/requested" method="post" enctype="multipart/form-data">
+    
   {% for foodd in food_data | batch(3, '&nbsp;') %}
 <div class="row">
 
@@ -51,6 +48,7 @@
     </div>
   </div>
     {% endfor %}
+    <hr>
  </div>
 {% endfor %}
 

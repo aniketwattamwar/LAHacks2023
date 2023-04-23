@@ -10,17 +10,29 @@
   </head>
   <body>
   
-  
+     
+
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+          <div class="navbar-header">
+            <img class="card-img-top" src="./static/img/connect.png" alt="Card image" style="width:35%">
+          </div>
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="http://127.0.0.1:5000/login">Login</a></li>
+          </ul>
+        </div>
+      </nav>
+    
   <div class="container h-100">
     <div class="row d-flex justify-content-center align-items-center h-100">
       <div class="col-lg-12 col-xl-11">
         <div class="card text-black" style="border-radius: 25px;">
-          <div class="card-body p-md-5">
+          <div class="card-body p-md-3">
             <div class="row justify-content-center">
               <div class="col-md-10 col-lg-6 col-xl-5 order-2 order-lg-1">
 
                 <p class="text-center h1 fw-bold mb-5 mx-1 mx-md-4 mt-4">Sign up</p>
-
+                 
                 <form action="addUser"  method="post" enctype="multipart/form-data" class="mx-1 mx-md-6">
 
                   <div class="d-flex flex-row align-items-center mb-4">
@@ -64,7 +76,7 @@
                     <i class="fas fa-user fa-lg me-3 fa-fw"></i>
                     <div class="form-outline flex-fill mb-0">
                     <label class="form-label" for="form3Example1c">Organisation</label>
-                    <p>Type Hotel or NGO</p>
+                    <p>Type Hotel or ngo</p>
                       <input type="text" id="form3Example1c" class="form-control" name="org" />
                       
                     </div>
@@ -101,10 +113,12 @@
                   </div>
 
                 </form>
-
+             
               </div>
               <div class="col-md-10 col-lg-6 col-xl-7 d-flex align-items-center order-1 order-lg-2">
-
+                <div class="col-md-8">
+                    <img src="https://images.unsplash.com/photo-1525498128493-380d1990a112?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTF8fHdhbGxwYXBlcnMlMjBmb3IlMjB3ZWJzaXRlc3xlbnwwfDF8MHx8&auto=format&fit=crop&w=600&q=60">
+                  </div>
               </div>
             </div>
           </div>
